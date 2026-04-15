@@ -1,2 +1,54 @@
-<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module"></script>
-<dotlottie-wc src="https://lottie.host/50d276e8-7ab6-4e7d-a5b4-3bb7550b358b/d0S76TtfDh.lottie" speed="1" style="width: 300px; height: 300px; backgroundColor: #FFDA00" mode="forward" loop autoplay></dotlottie-wc>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Yellow Experience</title>
+    
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.7.1/dist/dotlottie-wc.js" type="module" async></script>
+
+    <style>
+        /* 2. Set the background immediately */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFDA00; /* Your specific yellow */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            
+            /* 3. The Fade-In Animation */
+            animation: fadeIn ease 1.5s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Centering and styling the graphic container */
+        .graphic-container {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="graphic-container">
+        <dotlottie-wc 
+            src="https://lottie.host/50d276e8-7ab6-4e7d-a5b4-3bb7550b358b/d0S76TtfDh.lottie" 
+            speed="1" 
+            style="width: 300px; height: 300px;" 
+            mode="forward" 
+            loop 
+            autoplay>
+        </dotlottie-wc>
+    </div>
+
+</body>
+</html>
